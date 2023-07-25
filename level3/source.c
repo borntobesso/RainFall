@@ -1,10 +1,12 @@
 #include <stdio.h>
 
+int m;
+
 void v(void) {
 	char buf[512]; // ebp - 520 bytes
 	fgets(buf, 512, stdin);
 	printf(buf);
-	if (*(0x804988c) == '@') {
+	if (m == 64) {
 		fwrite("Wait what?\n", 1, 12, stdout);
 		system("/bin/sh");
 	}
