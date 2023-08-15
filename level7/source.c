@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 
-char *c;
+char c[80];
 
 void m() {
     time_t t;
